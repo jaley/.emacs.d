@@ -12,5 +12,5 @@
   '("general"))
 
 (mapcar (lambda (el)
-	  (load (concat (file-name-as-directory *emacs-cfg-dir*) el)  'noerror)) 
+	  (load (concat (file-name-as-directory *emacs-cfg-dir*) el)  'noerror))
 	*scripts*)

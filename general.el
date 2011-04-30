@@ -8,6 +8,7 @@
 ;; Global editor settings
 (show-paren-mode 1)
 (transient-mark-mode 1)
+(add-hook 'find-file-hook (lambda () (linum-mode 1)))
 
 ;; Startup tweaking
 (setq inhibit-startup-screen t)
