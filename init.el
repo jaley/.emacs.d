@@ -9,7 +9,8 @@
 
 ;; List of sub-scripts to be loaded on initialization
 (defvar *scripts*
-  '("general"
+  '("elpa"     ; ELPA first, so it can be referenced later. 
+    "general"
     "theme"))
 
 (mapcar (lambda (el)
