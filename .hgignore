@@ -5,3 +5,4 @@ tramp
 
 syntax: regexp
 .*\.elc
+.*/\.git/.*

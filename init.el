@@ -9,7 +9,8 @@
 
 ;; List of sub-scripts to be loaded on initialization
 (defvar *scripts*
-  '("general"))
+  '("general"
+    "theme"))
 
 (mapcar (lambda (el)
 	  (load (concat (file-name-as-directory *emacs-cfg-dir*) el)  'noerror))
