@@ -12,3 +12,10 @@
 
 ;; Startup tweaking
 (setq inhibit-startup-screen t)
+
+;; Enable X clipboard interop
+(setq x-select-enable-clipboard t)
+
+;; Start server for emacsclient
+(server-start)
+
