@@ -10,6 +10,9 @@
 (transient-mark-mode 1)
 (add-hook 'find-file-hook (lambda () (linum-mode 1)))
 
+;; Move the emacs droppings into a litter tray
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+
 ;; Startup tweaking
 (setq inhibit-startup-screen t)
 
