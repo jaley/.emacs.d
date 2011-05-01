@@ -8,3 +8,4 @@ syntax: regexp
 .*\.elc
 .*/\.git/.*
 session\.[a-fA-F0-9]+
+elpa/archives/.*
