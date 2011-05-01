@@ -19,6 +19,9 @@
 ;; Enable X clipboard interop
 (setq x-select-enable-clipboard t)
 
-;; Start server for emacsclient
-(server-start)
+;; Start server for emacsclient, if it's not
+;; running already.
+(require 'server)
+(unless (server-running-p)
+  (server-start))
 
