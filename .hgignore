@@ -7,3 +7,4 @@ tramp
 syntax: regexp
 .*\.elc
 .*/\.git/.*
+session\.[a-fA-F0-9]+
