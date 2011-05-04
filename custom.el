@@ -10,3 +10,9 @@
 		  :underline nil :slant normal :weight normal 
 		  :height 98 :width normal :foundry "unknown" 
 		  :family "DejaVu Sans Mono")))))
+
+(custom-set-variables
+ '(android-mode-avd "gingerbread")
+ '(android-mode-sdk-dir "~/devel/android-sdk-r10")
+ '(python-guess-indent nil))
+
