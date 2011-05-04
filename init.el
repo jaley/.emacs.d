@@ -11,9 +11,11 @@
 (defvar *scripts*
   '("elpa"     ; ELPA first, so it can be referenced later. 
     "general"
+    "modes"
     "theme"
     "clojure"
-    "yas"))
+    "yas"
+    "scala"))
 
 (mapcar (lambda (el)
 	  (load (concat (file-name-as-directory *emacs-cfg-dir*) el)  'noerror))

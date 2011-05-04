@@ -7,5 +7,6 @@ tramp
 syntax: regexp
 .*\.elc
 .*/\.git/.*
+.*/\.svn/.*
 session\.[a-fA-F0-9]+
 elpa/archives/.*
