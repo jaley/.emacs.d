@@ -8,7 +8,9 @@
 ;; Global editor settings
 (show-paren-mode 1)
 (transient-mark-mode 1)
-(add-hook 'find-file-hook (lambda () (linum-mode 1)))
+(add-hook 'find-file-hook (lambda () 
+                            (linum-mode 1)
+                            (line-number-mode -1)))
 
 (setq-default indent-tabs-mode nil)
 
