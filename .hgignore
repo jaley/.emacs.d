@@ -3,6 +3,7 @@ auto-save-list/*
 backups/*
 tramp
 ac-comphist.dat
+abbrev_defs
 *~
 
 syntax: regexp
