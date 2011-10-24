@@ -34,9 +34,7 @@
                                   'fullboth)))))
 (global-set-key [f11] 'toggle-fullscreen)
 
-;; Start server for emacsclient, if it's not
-;; running already.
-(require 'server)
-(unless (server-running-p)
-  (server-start))
+;; Transparency, if there's a composition manager loaded
+(add-to-list 'default-frame-alist 
+             '(alpha 85 85))
 

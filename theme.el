@@ -2,6 +2,6 @@
 
 (require 'color-theme)
 
-(add-to-list 'load-path "~/.emacs.d/plugins/emacs-color-theme-solarized")
-(require 'color-theme-solarized)
-(color-theme-solarized-light)
+(add-to-list 'load-path "~/.emacs.d/plugins/emacs-color-theme-twilight")
+(require 'color-theme-twilight)
+(color-theme-twilight)
