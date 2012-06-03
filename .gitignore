@@ -1,8 +1,12 @@
 auto-save-list/*
 backups/*
+elpa/*
+swank/*
+places
+.smex*
 tramp
 ac-comphist.dat
 abbrev_defs
 *~
 url
-elpa/*
+

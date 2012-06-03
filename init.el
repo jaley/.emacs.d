@@ -12,7 +12,14 @@
 
 (defvar installed-packages '(starter-kit 
 			     starter-kit-lisp 
-			     starter-kit-bindings)
+			     starter-kit-bindings
+                             clojure-mode
+                             clojure-project-mode
+                             clojure-test-mode
+                             clojurescript-mode
+                             slime
+                             slime-repl
+                             durendal)
   "Emacs packages to be installed if they aren't already.")
 
 (dolist (p installed-packages)
