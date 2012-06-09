@@ -26,6 +26,8 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
+;; We don't want custom messing with this file
+(setq custom-file "~/.emacs.d/custom.el")
 
 ;;
 ;; Frame appearance
