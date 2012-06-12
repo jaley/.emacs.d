@@ -1,7 +1,7 @@
 ;;;; Custom key bindings
 
 ;; TouchType helpers
-(defvar *touchtype-home* "~/devel/source/TouchType-Build/")
+(defvar *touchtype-home* "~/devel/TouchType-Build/")
 (defun tt-vc-status ()
   (interactive)
   (vc-dir *touchtype-home*))
