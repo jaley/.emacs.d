@@ -10,8 +10,8 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(defvar installed-packages '(starter-kit 
-			     starter-kit-lisp 
+(defvar installed-packages '(starter-kit
+			     starter-kit-lisp
 			     starter-kit-bindings
                              clojure-mode
                              clojure-project-mode
@@ -20,7 +20,8 @@
                              slime
                              slime-repl
                              durendal
-                             lua-mode)
+                             lua-mode
+                             scala-mode)
   "Emacs packages to be installed if they aren't already.")
 
 (dolist (p installed-packages)
@@ -37,7 +38,7 @@
 (scroll-bar-mode -1)
 (show-paren-mode 1)
 (transient-mark-mode 1)
-(add-hook 'find-file-hook (lambda () 
+(add-hook 'find-file-hook (lambda ()
                             (linum-mode 1)
                             (line-number-mode -1)))
 (setq inhibit-startup-screen t)
@@ -61,6 +62,8 @@
 (setq-default indent-tabs-mode nil)
 (setq x-select-enable-clipboard t)
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
